@@ -45,7 +45,7 @@ const WhyChooseSection = () => {
               className="text-center group hover:bg-white/5 p-6 rounded-lg transition-all duration-300 animate-fade-in"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-orange-600 rounded-full mb-4 group-hover:bg-orange-500 transition-colors">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-orange-500 rounded-full mb-4 group-hover:bg-orange-400 transition-colors">
                 <feature.icon size={32} className="text-white" />
               </div>
               <h3 className="text-xl font-semibold mb-3 font-poppins">
