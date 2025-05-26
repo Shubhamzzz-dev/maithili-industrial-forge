@@ -7,23 +7,23 @@ const HeroSection = () => {
   
   const slides = [
     {
-      image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=1920&h=800&fit=crop&auto=format&q=80",
+      image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=1920&h=800&fit=crop&auto=format&q=80",
       title: "Leading Manufacturer of Fly Ash Handling Plants"
     },
     {
-      image: "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=1920&h=800&fit=crop&auto=format&q=80", 
+      image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=1920&h=800&fit=crop&auto=format&q=80", 
       title: "Automated Brick Making Solutions"
     },
     {
-      image: "https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=1920&h=800&fit=crop&auto=format&q=80",
+      image: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=1920&h=800&fit=crop&auto=format&q=80",
       title: "Industrial Engineering Excellence"
     },
     {
-      image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&h=800&fit=crop&auto=format&q=80",
+      image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&h=800&fit=crop&auto=format&q=80",
       title: "Advanced Manufacturing Technology"
     },
     {
-      image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=1920&h=800&fit=crop&auto=format&q=80",
+      image: "https://images.unsplash.com/photo-1545558014-8692077e9b5c?w=1920&h=800&fit=crop&auto=format&q=80",
       title: "Precision Construction Equipment"
     }
   ];
@@ -56,9 +56,9 @@ const HeroSection = () => {
             <img
               src={slide.image}
               alt={slide.title}
-              className="w-full h-full object-cover brightness-110 contrast-105"
+              className="w-full h-full object-cover brightness-125 contrast-110"
             />
-            <div className="absolute inset-0 bg-black/20"></div>
+            <div className="absolute inset-0 bg-white/60"></div>
           </div>
         ))}
       </div>
