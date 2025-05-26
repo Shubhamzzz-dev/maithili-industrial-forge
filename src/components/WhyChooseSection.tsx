@@ -30,7 +30,7 @@ const WhyChooseSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 font-poppins">
-            Why Choose <span className="text-steel-400">Maithili Engineering</span>
+            Why Choose <span className="text-orange-400">Maithili Engineering</span>
           </h2>
           <p className="text-lg text-gray-300 max-w-2xl mx-auto">
             Our commitment to excellence, innovation, and customer satisfaction 
@@ -45,7 +45,7 @@ const WhyChooseSection = () => {
               className="text-center group hover:bg-white/5 p-6 rounded-lg transition-all duration-300 animate-fade-in"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-steel-600 rounded-full mb-4 group-hover:bg-steel-500 transition-colors">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-orange-600 rounded-full mb-4 group-hover:bg-orange-500 transition-colors">
                 <feature.icon size={32} className="text-white" />
               </div>
               <h3 className="text-xl font-semibold mb-3 font-poppins">
@@ -62,19 +62,19 @@ const WhyChooseSection = () => {
         <div className="mt-16 pt-16 border-t border-white/20">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-3xl font-bold text-steel-400 mb-2 font-poppins">10+</div>
+              <div className="text-3xl font-bold text-orange-400 mb-2 font-poppins">10+</div>
               <div className="text-gray-300">Years Experience</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-steel-400 mb-2 font-poppins">100+</div>
+              <div className="text-3xl font-bold text-orange-400 mb-2 font-poppins">100+</div>
               <div className="text-gray-300">Happy Clients</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-steel-400 mb-2 font-poppins">50+</div>
+              <div className="text-3xl font-bold text-orange-400 mb-2 font-poppins">50+</div>
               <div className="text-gray-300">Projects Completed</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-steel-400 mb-2 font-poppins">24/7</div>
+              <div className="text-3xl font-bold text-orange-400 mb-2 font-poppins">24/7</div>
               <div className="text-gray-300">Support Available</div>
             </div>
           </div>
