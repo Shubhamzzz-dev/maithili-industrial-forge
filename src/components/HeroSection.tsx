@@ -7,23 +7,23 @@ const HeroSection = () => {
   
   const slides = [
     {
-      image: "https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=1920&h=800&fit=crop",
+      image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=1920&h=800&fit=crop&auto=format&q=80",
       title: "Leading Manufacturer of Fly Ash Handling Plants"
     },
     {
-      image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=1920&h=800&fit=crop", 
+      image: "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=1920&h=800&fit=crop&auto=format&q=80", 
       title: "Automated Brick Making Solutions"
     },
     {
-      image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&h=800&fit=crop",
+      image: "https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=1920&h=800&fit=crop&auto=format&q=80",
       title: "Industrial Engineering Excellence"
     },
     {
-      image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=1920&h=800&fit=crop",
+      image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&h=800&fit=crop&auto=format&q=80",
       title: "Advanced Manufacturing Technology"
     },
     {
-      image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&h=800&fit=crop",
+      image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=1920&h=800&fit=crop&auto=format&q=80",
       title: "Precision Construction Equipment"
     }
   ];
@@ -56,9 +56,9 @@ const HeroSection = () => {
             <img
               src={slide.image}
               alt={slide.title}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover brightness-110 contrast-105"
             />
-            <div className="absolute inset-0 bg-black/40"></div>
+            <div className="absolute inset-0 bg-black/20"></div>
           </div>
         ))}
       </div>
