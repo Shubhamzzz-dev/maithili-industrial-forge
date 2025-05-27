@@ -1,8 +1,11 @@
 
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
+import { useNavigate } from 'react-router-dom';
 
 const ProductsSection = () => {
+  const navigate = useNavigate();
+  
   const products = [
     {
       id: 1,
@@ -14,7 +17,8 @@ const ProductsSection = () => {
         "Dust-free operation",
         "Automated control systems",
         "Low maintenance design"
-      ]
+      ],
+      slug: "fly-ash-handling-system"
     },
     {
       id: 2,
@@ -26,7 +30,8 @@ const ProductsSection = () => {
         "High production capacity",
         "Quality brick formation",
         "Energy efficient operation"
-      ]
+      ],
+      slug: "fully-automatic-brick-making-plant"
     },
     {
       id: 3,
@@ -38,7 +43,8 @@ const ProductsSection = () => {
         "Lower investment cost",
         "Flexible production",
         "Easy operation"
-      ]
+      ],
+      slug: "semi-automatic-brick-making-machines"
     },
     {
       id: 4,
@@ -50,7 +56,8 @@ const ProductsSection = () => {
         "Uniform mixing",
         "Variable speed control",
         "Heavy-duty bearings"
-      ]
+      ],
+      slug: "pan-mixers-and-conveyors"
     }
   ];
 
@@ -59,6 +66,10 @@ const ProductsSection = () => {
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
+  };
+
+  const handleLearnMore = (slug: string) => {
+    navigate(`/products/${slug}`);
   };
 
   return (
@@ -117,6 +128,7 @@ const ProductsSection = () => {
                   Enquire Now
                 </Button>
                 <Button 
+                  onClick={() => handleLearnMore(product.slug)}
                   variant="outline" 
                   className="border-steel-600 text-steel-600 hover:bg-steel-50"
                 >
