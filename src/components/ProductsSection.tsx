@@ -1,4 +1,3 @@
-
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { useNavigate } from 'react-router-dom';
@@ -68,7 +67,9 @@ const ProductsSection = () => {
     }
   };
 
-  const handleLearnMore = (slug: string) => {
+  const handleLearnMore = (productTitle: string) => {
+    // Convert product title to URL-friendly slug with hyphens
+    const slug = productTitle.toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]/g, '');
     navigate(`/products/${slug}`);
   };
 
@@ -128,7 +129,7 @@ const ProductsSection = () => {
                   Enquire Now
                 </Button>
                 <Button 
-                  onClick={() => handleLearnMore(product.slug)}
+                  onClick={() => handleLearnMore(product.title)}
                   variant="outline" 
                   className="border-steel-600 text-steel-600 hover:bg-steel-50"
                 >
